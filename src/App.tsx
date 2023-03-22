@@ -10,11 +10,11 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { addSharp, home, settingsSharp, statsChart } from 'ionicons/icons';
+import { addSharp, home, settingsSharp, statsChart, stopwatch } from 'ionicons/icons';
 import Login from './pages/Login'; 
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab4 from './pages/Tab4';
+import Tab1 from './pages/Timerpage';
+import Tab2 from './pages/Stopwatchpage';
+import Tab4 from './pages/Settingspage';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -49,26 +49,26 @@ const App: React.FC = () => (
         <Route exact path="/App">
           <Tab1 />
         </Route>
-          <Route exact path="/tab1">
+          <Route exact path="/Timerpage.tsx">
             <Tab1 />
           </Route>
-          <Route exact path="/tab2">
+          <Route exact path="/Stopwatchpage.tsx">
             <Tab2 />
           </Route>
-          <Route exact path="/tab4">
+          <Route exact path="/Settingspage.tsx">
             <Tab4 />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="timer" href="/Timerpage.tsx">
             <IonIcon icon={home} />
-            <IonLabel>Home</IonLabel>
+            <IonLabel>Timer</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={addSharp} />
-            <IonLabel>New Timer</IonLabel>
+          <IonTabButton tab="stopwatch" href="/Stopwatchpage.tsx">
+            <IonIcon icon={stopwatch} />
+            <IonLabel>Stopwatch</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab4" href="/tab4">
+          <IonTabButton tab="settings" href="/Settingspage.tsx">
             <IonIcon icon={settingsSharp} />
             <IonLabel>Settings</IonLabel>
           </IonTabButton>

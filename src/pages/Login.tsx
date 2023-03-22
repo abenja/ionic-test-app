@@ -7,7 +7,7 @@ const Login: React.FC = () => {
     const navigation = useIonRouter()
 
     const doLogin = () => {
-        navigation.push('/app', 'root', 'replace')
+        navigation.push('/Timerpage.tsx', 'root', 'replace')
     }
 
 
@@ -23,6 +23,8 @@ const Login: React.FC = () => {
         <LoginCard />
         <div className='login-button'>
         <IonButton onClick={() => doLogin()}>Login</IonButton>
+        <IonButton href='./Timerpage.tsx' color='medium'>Skip</IonButton>
+
         </div>
       </IonContent>
     </IonPage>
