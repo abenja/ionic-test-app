@@ -14,7 +14,6 @@ import { addSharp, home, settingsSharp, statsChart } from 'ionicons/icons';
 import Login from './pages/Login'; 
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
 
 
@@ -56,9 +55,6 @@ const App: React.FC = () => (
           <Route exact path="/tab2">
             <Tab2 />
           </Route>
-          <Route exact path="/tab3">
-            <Tab3 />
-          </Route>
           <Route exact path="/tab4">
             <Tab4 />
           </Route>
@@ -71,10 +67,6 @@ const App: React.FC = () => (
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon icon={addSharp} />
             <IonLabel>New Timer</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={statsChart} />
-            <IonLabel>Metrics</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab4" href="/tab4">
             <IonIcon icon={settingsSharp} />

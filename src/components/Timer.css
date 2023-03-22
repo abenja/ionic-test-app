@@ -1,0 +1,23 @@
+.remaining-time {
+    display: flex;
+    justify-content: center;
+    font-size: 15vw;
+}
+
+.progress-bar-base {
+    border-radius: 5px;
+}
+
+.progress-bar-top {
+border-radius: 5px;
+}
+
+.handle-button {
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.handle-buttons-container {
+    display: flex;
+    justify-content: center;
+}

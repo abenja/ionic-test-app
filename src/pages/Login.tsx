@@ -1,6 +1,5 @@
 import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, useIonRouter } from '@ionic/react';
 import LoginCard from '../components/Login-card';
-import ExploreContainer from '../components/ExploreContainer';
 import './Login.css';
 
 

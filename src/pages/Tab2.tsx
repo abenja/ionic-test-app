@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonDatetime, IonHeader, IonItem, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
@@ -15,6 +15,10 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">Tab 2</IonTitle>
           </IonToolbar>
         </IonHeader>
+
+        <IonItem  >
+          <IonDatetime presentation='time'></IonDatetime>
+        </IonItem>
       </IonContent>
     </IonPage>
   );
